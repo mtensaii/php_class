@@ -228,7 +228,22 @@ a{
 #footer-icon-container{
     display: grid;
     height: 20px;
+    width: 75px;
+    margin: 10px auto;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
 }
+
+#footer-icon-container img{
+    width: 20px;
+    filter: saturate(0);
+}
+
+#footer-icon-container img:hover{
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+    filter: saturate(1);
+}
+
+
 
