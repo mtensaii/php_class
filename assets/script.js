@@ -63,7 +63,7 @@ button3.addEventListener("click", () => {
     var result = document.getElementById('result3');
     var tmp = parseFloat(input);
     var time = 0;
-    if (tmp == input && tmp > -1) {
+    if (tmp == input && tmp >= 0) {
         time += Math.min(tmp, 3000) * 1;
         tmp -= 3000;
         time += Math.min(Math.max(tmp, 0), 2000) * 2;
