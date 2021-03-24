@@ -37,13 +37,16 @@ button2.addEventListener("click", () => {
 
     if (tmp == input && (tmp < 11 && tmp > -1)) {
         switch (tmp) {
-            case 9, 10:
+            case 9: 
+            case 10:
                 result.value = "Excellent";
                 break;
-            case 7, 8:
+            case 7:
+            case 8:
                 result.value = "Good";
                 break;
-            case 5, 6:
+            case 5:
+            case 6:
                 result.value = "Average";
                 break;
             default:
