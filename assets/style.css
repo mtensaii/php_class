@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper {
@@ -25,3 +26,73 @@
     margin: 10px;
 }
 
+span {
+    font-size: 0.7em;
+}
+
+label {
+    font-size: 0.7em;
+}
+
+#form-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: auto auto;
+}
+
+.form-items {
+    border: 2px solid black;
+    margin: 3px 3px;
+    display: flex; 
+    justify-content:center; 
+    align-items:center;
+    height: 50px;
+}
+
+.form-items input[type=text], .form-items select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100%;
+
+}
+
+#form-container .form-items input[type=number], #form-container .form-items  select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100%;
+
+}
+
+table{
+    width: 100%;
+	margin-top: 50px;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+#show th, #show td{
+	padding: 13px;
+}
+
+#btna td input{
+	width: 100%;
+}
+
+#print-content {
+    width: 80%;
+    margin: auto auto;
+}
