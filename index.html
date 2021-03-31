@@ -16,161 +16,55 @@
 
             <!-- START exercise 1 -->
             <div class="box">
-                Exercise 1 <br>
-                <input id="ex1-input1" placeholder="Enter a number"> <br>
-                <input id="ex1-input2" placeholder="Enter a number"> <br>
-                <select name="" id="ex1-select">
-                    <option value="add">Add</option>
-                    <option value="sub">Subtract</option>
-                    <option value="mult">Multiply</option>
-                    <option value="divide">Divide</option>
-                    <option value="mod">Modulo</option>
-                </select> <br>
-                <input id="ex1-result" placeholder="Result" readonly></input> <br>
-                <button id="ex1-checkButton">Calculate</button>
+                <div class="box" id="ex7">
+                    <p style="margin-bottom: 0.4em;">An arbitary form...</p>
+                    <form action="" method="" name="" id="" class="">
+                        <div id="form-container">
+                            <div class="form-items">
+                                <label for="id">ID</label>
+                            </div>
+                            <div class="form-items">
+                                <input required type="text" id="id" placeholder="Enter your ID">
+                            </div>
+
+                            <div class="form-items">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-items">
+                                <input required type="text" name="name" id="name" class="" value=""
+                                    placeholder="Enter your full name" minlength="5" />
+                            </div>
+                            <div class="form-items">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-items">
+                                <input required type="text" placeholder="Enter your email" id="email">
+                            </div>
+                            <div class="form-items">
+                                <label for="phone">Phone</label>
+                            </div>
+                            <div class="form-items">
+                                <input required type="number" name="phone" id="phone" class="" value=""
+                                    placeholder="Enter your phone number" />
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                    <button onclick="addData();" id="addbtn">Add</button>
+                    <button onclick="saveData();" id="editbtn">Edit</button>
+                    <!-- <button onclick="viewData();" id="viewbtn">View</button> -->
+                    <button onclick="search();" id="searchbtn">Search</button>
+                    <button onclick="resetScreen();" id="refreshbtn" >Reset</button>
+                </div>
+
+                <div id="database"></div>
+                <!-- END exercise 7 -->
+                <script src="assets/script.js"></script>
             </div>
 
             <!-- END exercise 1 -->
-
-
-            <!-- START exercise 2 -->
-            <div class="box">
-                Exercise 2 <br>
-                <input id="ex2-input1" placeholder="Enter a month"> <br>
-                <input id="ex2-input2" placeholder="Enter a year"> <br>
-                <button id="ex2-checkButton">Calculate</button> <br>
-                <input id="ex2-result" placeholder="Result" readonly></input> <br>
-            </div>
-            <!-- END exercise 2 -->
-
-            <!-- START exercise 3 -->
-            <div class="box">
-                Exercise 3 <br>
-                <input id="ex3-input1" placeholder="Enter the length (m)"> <br>
-                <input id="ex3-input2" placeholder="Enter the width (m)"> <br>
-                <button id="ex3-checkButton">Calculate</button> <br>
-                <input id="ex3-result1" placeholder=" Perimeter Result (m)" readonly></input> <br>
-                <input id="ex3-result2" placeholder="Area Result (m2)" readonly></input> <br>
-            </div>
-            <!-- END exercise 3 -->
-
-            <!-- START exercise 4 -->
-            <div class="box">
-                Exercise 4 <br>
-                <span>
-                    ax<sup>2</sup> + bx + c = 0
-                </span> <br>
-                <input id="ex4-input1" placeholder="Enter a"> <br>
-                <input id="ex4-input2" placeholder="Enter b"> <br>
-                <input id="ex4-input3" placeholder="Enter c"> <br>
-                <button id="ex4-checkButton">Solve</button> <br>
-                <input id="ex4-result1" placeholder="Result" readonly></input> <br>
-                <input id="ex4-result2" placeholder="Result" readonly></input> <br>
-            </div>
-            <!-- END exercise 4 -->
-
-
-            <!-- START exercise 5 -->
-            <div class="box">
-                Exercise 5 <br>
-                <input id="ex5-input" placeholder="Enter an arbitary number [1-100]"> <br>
-                <input id="ex5-result" placeholder="Result" readonly></input> <br>
-                <button id="ex5-checkButton">Check</button>
-            </div>
-            <!-- START exercise 5 -->
-
-            <!-- START exercise 6 -->
-            <div class="box">
-                Exercise 6 <br>
-                <input id="ex6-input" placeholder="Enter an arbitary number [1-50]"> <br>
-                <input id="ex6-result" placeholder="Result" readonly></input> <br>
-                <button id="ex6-checkButton">Caculate</button>
-            </div>
-            <!-- END exercise 6 -->
-
-            <!-- START exercise 7 -->
-            <div class="box" id="ex7">
-                Exercise 7 <br>
-                <form action="" method="" name="" id="" class="">
-                    <div id="form-container">
-                        <div class="form-items">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="form-items">
-                            <input required type="text" name="name" id="name" class="" value=""
-                                placeholder="Input full name" minlength="5" onchange="onChange(event)" />
-                        </div>
-
-                        <div class="form-items">
-                            <label for="phone">Phone</label>
-                        </div>
-                        <div class="form-items">
-                            <input required type="number" name="phone" id="phone" class="" value=""
-                                placeholder="Input your phone number" onchange="onChange(event)" />
-                        </div>
-
-                        <div class="form-items">
-                            <label for="gender">Gender</label>
-                        </div>
-                        <div class="form-items">
-                            <label for="male">
-                                <input type="radio" name="gender" id="male" class="" value="Male"
-                                    placeholder="" onchange="onChange(event)" /> Male
-                            </label>
-
-                            <label for="female">
-                                <input type="radio" name="gender" id="female" class="" value="Female" placeholder="" onchange="onChange(event)"/>
-                                Female
-                            </label>
-                        </div>
-
-                        <div class="form-items">
-                            <label for="like">Hobby</label>
-                        </div>
-                        <div class="form-items">
-                            <label for="reading">
-                                <input  type="checkbox" name="read" id="reading" class="" 
-                                    placeholder="" onchange="onChange(event)" value='Reading' /> Reading
-                            </label>
-
-                            <label for="travel">
-                                <input type="checkbox" name="travel" id="travel" value='Traveling' class="" 
-                                    placeholder="" onchange="onChange(event)" /> Traveling
-                            </label> <span> </span>
-
-                            <label for="music">
-                                <input type="checkbox" name="music" id="music" value='Music' class=""  placeholder="" onchange="onChange(event)" />
-                                Music
-                            </label>
-                        </div>
-                    </div>
-
-                    <button name="reset" type="reset">Reset</button>
-                    <button name="send-info" type="reset" type="submit" type="button" id="ex7-checkButton" value="Add"
-                        onclick="AddRow()">Add</button>
-                    <button id="clearButton"> Clear </button>
-                </form>
-                    
-
-                <div id="print-content">
-                    <table border="4" id="show">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Phone number</th>
-                                <th>Gender</th>
-                                <th>Hobby</th>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-
-            </div>
-            <!-- END exercise 7 -->
-        </div>
-    </div>
-
-    <script src="assets/exercise1.js"></script>
 </body>
 
 </html>

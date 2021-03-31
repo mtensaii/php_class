@@ -76,12 +76,35 @@ label {
 
 }
 
+button {
+    padding: 0;
+    margin: 0;
+}
+
 table{
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 	margin-top: 50px;
 	text-align: center;
 	background: #333;
 	color: #fff;
+    font-size: 00.7em;
+    align-items:center ;
+    justify-content: center;
+}
+
+table th {
+    padding: 5px 5px;
+    align-items:center ;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+table td {
+    padding: 5px 5px;
+    align-items:center ;
+    justify-content: center;
 }
 
 #show th, #show td{
@@ -95,4 +118,30 @@ table{
 #print-content {
     width: 80%;
     margin: auto auto;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+table td .button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
