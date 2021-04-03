@@ -55,7 +55,7 @@ function registerMember() {
 		invalidPassword.innerHTML = 'Please fill in this box';
 	}
 	else if (!regexPass.test(password)) {
-		invalidPassword.innerHTML = 'Invalid password! ';
+		invalidPassword.innerHTML = 'Invalid password! Password must has at least eight characters, one letter and one number.';
 	}
 	else {
 		invalidPassword.innerHTML = '';
