@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    background-color: bisque;
+    min-height: 960px;
+    margin: auto auto;
+}
+
+#box-container {
+    display: grid;
+    grid-template-columns: 70%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(161, 161, 161, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px auto;
+    width: 450px;
+    border-radius: 10px;
+}
+
+span {
+    font-size: 0.7em;
+}
+
+label {
+    font-size: 0.7em;
+}
+
+
+
+.form-items {
+    border: 2px solid black;
+    margin: 3px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.form-items input[type=text],
+.form-items select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100%;
+
+}
+
+#form-container .form-items input[type=number],
+#form-container .form-items select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 100%;
+
+}
+
+table {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#show th,
+#show td {
+    padding: 13px;
+}
+
+#btna td input {
+    width: 100%;
+}
+
+#print-content {
+    width: 80%;
+    margin: auto auto;
+}
+
+
+
+input,
+select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

@@ -7,139 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Homework</title>
     <link rel="shortcut icon" type="image/png" href="assets/pictures/shortcuticon.jpg">
-
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" -->
-        <!-- integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <style>
-        label span {
-            color: red;
-        }
-    </style>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/styleBoostrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-3.6.0.js"></script>
 </head>
 
 <body>
     <div id="wrapper">
-        <div id="box-container" style>
+        <div id="box-container">
 
-            <!-- INPUT FORM -->
+            <!-- START exercise 1 -->
             <div class="box">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6">
-
-                            <h4 style="margin: 30px 0px;">FORM ĐĂNG KÝ TÀI KHOẢN</h4>
-
-                            <form action="" method="" name="register" onsubmit="return registerMember()">
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="name">Họ tên <span id="errorName">(*)</span></label>
-                                        <input type="text" name="name" class="form-control" id="name" />
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="phone">Phone <span id="errorPhone">(*)</span></label>
-                                        <input type="text" name="phone" class="form-control" id="phone" />
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="email">Email <span id="errorEmail">(*)</span></label>
-                                        <input type="text" name="email" class="form-control" id="email" />
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="pass">Mật khẩu <span id="errorPass">(*)</span></label>
-                                        <input type="password" name="passw" class="form-control" id="pass" />
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="passw">Nhập lại mật khẩu <span id="errorConPass">(*)</span></label>
-                                        <input type="password" name="con_passw" class="form-control" id="passw" />
-                                    </div>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary">Gửi thông tin</button>
-                                <button type="reset" class="btn btn-danger">Xóa thông tin</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                Exercise 1 <br>
+                <input id="ex1-input1" placeholder="Enter a number"> <br>
+                <input id="ex1-input2" placeholder="Enter a number"> <br>
+                <select name="" id="ex1-select">
+                    <option value="">-- Select --</option>
+                    <option value="add">Add</option>
+                    <option value="sub">Subtract</option>
+                    <option value="mult">Multiply</option>
+                    <option value="divide">Divide</option>
+                    <option value="mod">Modulo</option>
+                </select> <br>
+                <input id="ex1-result" placeholder="Result" readonly></input> <br>
+                <button id="ex1-checkButton">Calculate</button>
             </div>
+            <!-- END exercise 1 -->
 
-            <!-- PRINT RESULT -->
+            <!-- START exercise 2 -->
             <div class="box">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6" style="width: 100%;">
-
-                            <h4 style="margin: 30px 0px; width: 100%; text-align: center;">RESULT</h4>
-
-                            <form action="" method="" >
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="name">Họ tên </label>
-                                        <input type="text" name="" class="form-control" id="printName" readonly />
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="phone">Phone </label>
-                                        <input type="text" name="" class="form-control" id="printPhone"readonly/>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="email">Email </label>
-                                        <input type="text" name="" class="form-control" id="printEmail"  readonly/>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="pass">Mật khẩu </label>
-                                        <input type="text" name="" class="form-control" id="printPass" readonly/>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="passw">Nhập lại mật khẩu </label>
-                                        <input type="text" name="" class="form-control" id="printPassw" readonly/>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                Exercise 2 <br>
+                <span>
+                    ax<sup>2</sup> + bx + c = 0
+                </span> <br>
+                <input id="ex2-input1" placeholder="Enter a"> <br>
+                <input id="ex2-input2" placeholder="Enter b"> <br>
+                <input id="ex2-input3" placeholder="Enter c"> <br>
+                <button id="ex2-checkButton">Solve</button> <br>
+                <input id="ex2-result1" placeholder="Result" readonly></input> <br>
+                <input id="ex2-result2" placeholder="Result" readonly></input> <br>
             </div>
+            <!-- END exercise 2 -->
+
         </div>
     </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-    <script src="assets/script.js"></script>
-    <!-- END exercise 1 -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
