@@ -1,7 +1,4 @@
-$(document).ready(fucntion(){
-    $("#ex1-checkButton").click(fucntion(){
-    });
-})
+
 
 // const button1 = document.getElementById('ex1-checkButton');
 // const ERR_MESSAGE = "Invalid Input";

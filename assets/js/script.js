@@ -10,10 +10,25 @@ function reset2(){
     $("#ex2-result2").hide();
 }
 
+function reset1(){
+    $("#ex1-result").val(null);
+}
+
+function checkValid(input){
+    let temp = parseFloat(input);
+    if (temp != input){
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
 $(document).ready(function () {
     $("#ex2-result1").hide();
     $("#ex2-result2").hide();
     $("#ex1-checkButton").on("click", function () {
+        reset1();
         if (initCheck() == 1) {
             return;
         }
